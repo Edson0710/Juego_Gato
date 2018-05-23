@@ -106,13 +106,13 @@
         android:background="@color/colorPrimaryDark" />
 
     <Button
-        android:id="@+id/btn_22"
+        android:id="@+id/c3"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_alignStart="@+id/btn_12"
         android:layout_below="@+id/btn_12"
-        android:layout_marginTop="16dp"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="16dp"/>
 
 
 </RelativeLayout>
