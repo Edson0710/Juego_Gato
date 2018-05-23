@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -117,10 +118,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return false;
     }
 
-    private void gano1(){}
+    private void gano1(){
+        Puntos1++;
+        Toast.makeText(this, "Jugador 1 es el Ganador", Toast.LENGTH_SHORT).show();
+        updatePuntos();
+        restTablero();
+    }
 
-    private void gano2(){}
+    private void gano2(){
+        Puntos2++;
+        Toast.makeText(this, "Jugador 2 es el Ganador", Toast.LENGTH_SHORT).show();
+        updatePuntos();
+        restTablero();
+    }
 
-    private void draw() {}
+    private void draw() {
+        Toast.makeText(this, "Empate!", Toast.LENGTH_SHORT).show();
+        restTablero();
+    }
+
+    private void updatePuntos() {
+        j1.setText("Jugador 1: " + Puntos1);
+        j2.setText("Jugador 2: " + Puntos2);
+    }
+
+    private void restTablero() {
+        for(int i = 0; i < 3;i++){
+            for(int j = 0;j<3;j++){
+              botones[i][j].setText("");
+            }
+        }
+        rondascont = 0;
+        turno1 = true;
+    }
+
+
 }
 
