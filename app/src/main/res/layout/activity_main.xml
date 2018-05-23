@@ -41,7 +41,8 @@
         android:layout_above="@+id/btn_10"
         android:layout_alignStart="@+id/btn_10"
         android:layout_marginBottom="16dp"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimaryDark"
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/btn_01"
@@ -50,7 +51,8 @@
         android:layout_above="@+id/btn_11"
         android:layout_alignStart="@+id/btn_11"
         android:layout_marginBottom="16dp"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimaryDark"
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/btn_02"
@@ -59,7 +61,8 @@
         android:layout_above="@+id/btn_12"
         android:layout_alignStart="@+id/btn_12"
         android:layout_marginBottom="16dp"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimaryDark"
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/btn_10"
@@ -68,7 +71,8 @@
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/btn_11"
         android:background="@color/colorPrimaryDark"
-        android:layout_marginRight="16dp"/>
+        android:layout_marginRight="16dp"
+        android:textSize="40sp"/>
 
     <Button
         android:layout_width="64dp"
@@ -76,7 +80,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@color/colorPrimaryDark"
-        android:id="@+id/btn_11" />
+        android:id="@+id/btn_11"
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/btn_12"
@@ -85,7 +90,8 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/btn_11"
         android:background="@color/colorPrimaryDark"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="16dp"
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/btn_20"
@@ -94,7 +100,8 @@
         android:layout_alignStart="@+id/btn_10"
         android:layout_below="@+id/btn_10"
         android:layout_marginTop="16dp"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimaryDark"
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/btn_21"
@@ -103,16 +110,18 @@
         android:layout_alignStart="@+id/btn_11"
         android:layout_below="@+id/btn_11"
         android:layout_marginTop="16dp"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimaryDark"
+        android:textSize="40sp"/>
 
     <Button
-        android:id="@+id/c3"
+        android:id="@+id/btn_22"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_alignStart="@+id/btn_12"
         android:layout_below="@+id/btn_12"
+        android:layout_marginTop="16dp"
         android:background="@color/colorPrimaryDark"
-        android:layout_marginTop="16dp"/>
+        android:textSize="40sp"/>
 
 
 </RelativeLayout>

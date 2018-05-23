@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int Puntos1;
     private int Puntos2;
 
-    private TextView j1;
-    private TextView j2;
+    private TextView tvj1;
+    private TextView tvj2;
 
 
 
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        j1 = findViewById(R.id.j1);
-        j2 = findViewById(R.id.j2);
+        tvj1 = findViewById(R.id.j1);
+        tvj2 = findViewById(R.id.j2);
 
         for (int i = 0;i < 3;i++) {
             for(int j = 0;j < 3;j++) {
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                resetGame();
 
             }
         });
@@ -138,9 +139,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void updatePuntos() {
-        j1.setText("Jugador 1: " + Puntos1);
-        j2.setText("Jugador 2: " + Puntos2);
+        tvj1.setText("Jugador 1: " + Puntos1);
+        tvj2.setText("Jugador 2: " + Puntos2);
     }
+
 
     private void restTablero() {
         for(int i = 0; i < 3;i++){
@@ -150,6 +152,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         rondascont = 0;
         turno1 = true;
+    }
+
+    private void resetGame(){
+        Puntos1 = 0;
+        Puntos2 = 0;
+        updatePuntos();
+        restTablero();
+
     }
 
 
